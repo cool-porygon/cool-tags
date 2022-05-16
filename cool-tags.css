@@ -1,0 +1,52 @@
+cool-tags {
+  --tags-margin: 0;
+  --tags-padding: 0;
+  --tags-display: flex;
+  --tags-wrap: wrap;
+  --tags-flow: row;
+  --tags-spacing: 0.5rem;
+  --tags-alignment: flex-start;
+  --tags-item-alignment: center;
+  --tag-display: block;
+  --tag-background: #ededed;
+  --tag-color: #333333;
+  --tag-active-background: #333333;
+  --tag-active-color: #ededed;
+  --tag-padding: 0.5rem 1rem;
+  --tag-font-size: 0.8rem;
+  --tag-border-radius: 0.25rem;
+  --tag-text-decoration: underline;
+}
+
+cool-tags .tags {
+  list-style-type: none;
+  display: var(--tags-display);
+  flex-direction: var(--tags-flow);
+  justify-content: var(--tags-alignment);
+  flex-wrap: var(--tags-wrap);
+  align-items: var(--tags-item-alignment);
+  margin: var(--tags-margin);
+  padding: var(--tags-padding);
+}
+
+cool-tags .tags .tag {
+  border-radius: var(--tag-border-radius);
+  display: var(--tag-display);
+  background: var(--tag-background);
+  color: var(--tag-color);
+  padding: var(--tag-padding);
+  font-size: var(--tag-font-size);
+  margin-right: var(--tags-spacing);
+  margin-bottom: var(--tags-spacing);
+}
+
+cool-tags .tags .tag > a {
+  color: inherit;
+  text-decoration: var(--tag-text-decoration);
+}
+
+cool-tags .tags .tag.active,
+cool-tags .tags .tag:target {
+  background: var(--tag-active-background);
+  color: var(--tag-active-color);
+}

@@ -1,5 +1,7 @@
 # `cool-tags`
 
+![Example](screenshots/1.PNG)
+
 A custom element to render a list of tags.
 
 The `cool-tags` element is a custom element that renders a list of tags from a given JSON list.
